@@ -1,38 +1,41 @@
 <?php
-
-$author = [
+    require __DIR__ ."/function.php";
+$authors = [
         [
         'id'    =>  'Sience',
-        'fName' =>  'Steven',
-        'lName' =>  'Stevensson'
+        'fname' =>  'Steven',
+        'lname' =>  'Stevensson'
         ],
         [
         'id'    =>  'Art',   
-        'fName' =>  'Lars',
-        'lName' =>  'Larsson'
+        'fname' =>  'Lars',
+        'lname' =>  'Larsson'
         ],
         [
         'id'    =>  'Sport',   
-        'fName' =>  'Jenna',
-        'lName' =>  'Jensen'
+        'fname' =>  'Jenna',
+        'lname' =>  'Jensen'
         ],
         [
         'id'    =>  'Tech',   
-        'fName' =>  'Ann',
-        'lName' =>  'Anndersen'
+        'fname' =>  'Ann',
+        'lname' =>  'Anndersen'
         ],
         [
         'id'    =>  'Developers',   
-        'fName' =>  'Unknown',
-        'lName' =>  'Unknown'
+        'fname' =>  'Unknown',
+        'lname' =>  'Unknown'
         ]
     ];
+
+
 
 // Here will there be arrays for diffrent id and content
 
     $article = [
+                [
                     'id'=> 'Sience',
-        [           'title' => 'The subtle way mucus disarms microbes',
+                   'title' => 'The subtle way mucus disarms microbes',
                     'date'=> "2019-10-24",
                     'likes'=>  '2',
                     'content'=> '
@@ -99,13 +102,16 @@ $author = [
     ],
     ];
 
-  
+/*      foreach ($authors as $names) {
+     
+        echo $names['fname'];
+        echo "<br>";
+    
+} */
 
-/*
-en nyckel array
-    Title => header
-    Published date => datuu " använd date function"
-    Like counter (the number of likes a news feed item has received
-    Content =>  id
-    => antal 
-*/
+
+
+
+
+
+

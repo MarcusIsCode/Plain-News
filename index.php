@@ -9,9 +9,9 @@ Concatenation
 Output (echo, print etc.)
 
 
-*/ 
+*/
 
-
+require __DIR__ . "/data.php"
 
 
 ?>
@@ -24,12 +24,12 @@ Output (echo, print etc.)
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
 </head>
-    <h1>Don't read the news</h1>
-        <article> 
-            <h2>headline</h2>
+<h1>Don't read the news</h1>
 
+    <h2>headline</h2>
+    <?php echo authorFullName($authors,1); ?>
+    
 
-        </article>
 
 <body>
 </body>
