@@ -11,5 +11,26 @@ function authorFullName(array $names,int $index):string
         
         return $fullname;
 }
-    
 
+/* function content(array $contens, int $index): string
+{
+    $fullname = $contens[$index]['fname'] 
+
+    return;
+} */
+
+function addingstyle(int $num):string{
+        switch ($num){
+        case 0;
+        return 'Sience';
+        case 1;
+        return 'Art';
+        case 2;
+        return 'Sport';
+        case 3;
+        return 'Tech';
+        case 4;
+        return 'Devlopers';
+       
+        }
+    }

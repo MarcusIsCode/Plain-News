@@ -24,11 +24,34 @@ require __DIR__ . "/data.php"
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
 </head>
-<h1>Don't read the news</h1>
 
-    <h2>headline</h2>
-    <?php echo authorFullName($authors,1); ?>
-    
+<h1>Latest News</h1>
+<?php for ($i = 0; $i < count($authors); $i++) : ?>
+    <?php if($i === 0) : 
+        ?>
+    <?php foreach ($articleSience as $content) : ?>
+        <div class=" article <?php echo addingstyle($i) ?>">
+            
+        <h4><?php echo authorFullName($authors, $i); ?></h4>
+            <?php echo $content['title'] ?>
+            <p><?php echo $content['content'] ?></p>
+            <?php echo $content['likes']. " people liked this" ?>
+            <?php echo $content['date'] ?>
+        </div>
+    <?php endforeach; ?>
+    <?php endif; ?>
+
+
+
+<?php endfor; ?>
+
+
+</div>
+
+
+
+
+
 
 
 <body>
