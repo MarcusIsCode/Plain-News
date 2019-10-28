@@ -27,20 +27,17 @@ require __DIR__ . "/data.php"
 
 <h1>Latest News</h1>
 <?php for ($i = 0; $i < count($authors); $i++) : ?>
-    <?php if($i === 0) : 
-        ?>
-    <?php foreach ($articleSience as $content) : ?>
-        <div class=" article <?php echo addingstyle($i) ?>">
-            
-        <h4><?php echo authorFullName($authors, $i); ?></h4>
-            <?php echo $content['title'] ?>
-            <p><?php echo $content['content'] ?></p>
-            <?php echo $content['likes']. " people liked this" ?>
-            <?php echo $content['date'] ?>
-        </div>
-    <?php endforeach; ?>
+    <?php if ($i === 0) : ?>
+        <?php  for($y =0; $y < 5; $y++):?>  
+            <?php //if():?>
+                <div class=" article <?php echo addingstyle($i) ?>">
+                
+                <?php echo addContent($articleSience, $authors,$y); ?>                    
+        
+            </div>
+            <?php //endif; ?>
+        <?php endfor ?>
     <?php endif; ?>
-
 
 
 <?php endfor; ?>

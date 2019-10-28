@@ -1,5 +1,4 @@
-*  
-    { 
+*  { 
     margin: 0; 
     padding: 0; 
     border: 0; 
@@ -18,10 +17,14 @@ body{
     width: 300px;
     height:auto;
     text-align: center;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
 }
 .Sience{
-    background:chartreuse ;
+    padding:5px;
+}
+.Sience p{
+    font-size:18px;
+    text-align: left;
 }
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {

@@ -12,12 +12,18 @@ function authorFullName(array $names,int $index):string
         return $fullname;
 }
 
-/* function content(array $contens, int $index): string
-{
-    $fullname = $contens[$index]['fname'] 
+function addContent(array $content ,array $names, int $int):string
 
-    return;
-} */
+    {
+    $fullname ="<h4>" . $names[$int]['fname'] . " " . $names[$int]['lname']. "</h4>";  
+     
+     $title ="<h3>". $content[$int]['title'] ."</h3><br>";
+     
+      $text = "<p>". $content[$int]['content'] ."</p><br>";
+      $likes = "<p>" .$content[$int]['likes']. " Peopele likes this ". "</p>";
+      return $title.$fullname . $text .$likes;
+}
+
 
 function addingstyle(int $num):string{
         switch ($num){
@@ -34,3 +40,27 @@ function addingstyle(int $num):string{
        
         }
     }
+/*
+it's a function for taking the string dates from array
+and then turn them to normal dates.
+and then sort from smalles date to bigges
+*/
+
+function sortByDate(array $dates, int $int):string
+{
+    $dateArray = []; // a empty array for the new dates to be orderd
+    foreach($dates as $date){ 
+        
+        //string to date
+        
+         $dateArray [] = $date["date"];
+        
+         //sort smal to big 
+         rsort($dateArray) ;
+        
+    }
+    return $dateArray[$int];
+  
+}
+
+

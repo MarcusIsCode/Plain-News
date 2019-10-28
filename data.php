@@ -32,11 +32,11 @@ $authors = [
 
 // Here will there be arrays for diffrent id and content
 
-    $articleSience = [
+$articleSience = [
                 [
                     'id'=> 'Sience',
                    'title' => 'The subtle way mucus disarms microbes',
-                    'date'=> "20191024",
+                    'date'=> "2019-08-15",
                     'likes'=>  '4',
                     'content'=> '
                                 Mucus, which lines 200 square meter of our bodies including lungs and digestive tract
@@ -50,7 +50,7 @@ $authors = [
                 ],
                 [     'id' => 'Sience',
                     'title'=> 'Guess what… Even prehistoric humans stored food',
-                    'date'=> "20191016",
+                    'date'=> "2019-10-16",
                     'likes'=>  '3',
                     'content'=> 'While they didn’t have refrigerators, prehistoric humans also went through the pains of storing
                                  food for later consumption. This can be understood from the evidence of storage and delayed consumption
@@ -63,7 +63,7 @@ $authors = [
                 ],
                 [     'id' => 'Sience',
                     'title'=> 'Even low doses of antibiotics affect the gut bacteria',
-                    'date'=> "20191011",
+                    'date'=> "2019-10-11",
                     'likes'=>  '5',
                     'content'=> 'Gut microbes are known to be extremely sensitive to even low doses of antibiotics and such low
                                  doses are routinely found in the environment. Using three-dimensional microscopy in transparent 
@@ -76,7 +76,7 @@ $authors = [
                 ],
                  [     'id' => 'Sience',
                     'title'=> 'Salamander-like powers in humans to regrow cartilage',
-                    'date'=> "2019910",
+                    'date'=> "2019-09-10",
                     'likes'=>  '5',
                     'content'=> 'While it was always thought that humans cannot regrow tissue, researchers have recently discovered that
                                  human cartilage tissue has a repair mechanism similar to that seen in salamander.The cartilage tissue, 
@@ -89,8 +89,8 @@ $authors = [
                 [
                 'id' => 'Sience',
                 'title' => 'Lithium-ion batteries power 2019 Nobel Prize in Chemistry',
-                'date' => "2019910",
-                'likes' =>  '2s',
+                'date' => "2019-09-17",
+                'likes' =>  '2',
                 'content' =>    'The Lithium-ion battery, which is now a days used to power everything from cell phones
                                  to laptops as well as electric cars powered the Nobel Prize for Chemistry for this year.
                                  These batteries store sufficient energy from both solar and wind power making it possible
@@ -100,18 +100,19 @@ $authors = [
                                    Yoshino to release the first commercially viable lithium-ion battery in 
                                    1985. The prize was shared by the three laureates.'
     ],
-    ];
+ ];
 
-
-if ($articleSience[0]['id'] && $authors[0]['id'] == 'Sience') {
-    echo "yeeey";
-} else {
-
-    echo $authors[0]['id'];
-    echo $articleSience[0]['id'];
+for ($p=0; $p < 5; $p++) { 
+    # code...
+      sort($articleSience);
+   
+        print_r ($articleSience[$p]['date']);echo " 1 <br>";
 }
 
-
-
-
-
+/*
+2019-08-15 1
+2019-09-10 1
+2019-09-17 1
+2019-10-16 1
+2019-10-11 1
+*/
