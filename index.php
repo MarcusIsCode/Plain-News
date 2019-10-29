@@ -26,11 +26,12 @@ require __DIR__ . "/data.php"
 </head>
 
 <h1>Latest News</h1>
+<?php usort($articleSience, 'sortMetod'); ?>
 <?php for ($i = 0; $i < count($authors); $i++) : ?>
     <?php if ($i === 0) : ?>
 
 
-        <?php usort($articleSience,'sortMetod'); ?>
+
         <?php for ($y = 0; $y < 5; $y++) : ?>
 
             <div class="article <?php echo addingstyle($i) ?>">
