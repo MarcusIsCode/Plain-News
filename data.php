@@ -36,7 +36,7 @@ $articleSience = [
                 [
                     'id'=> 'Sience',
                    'title' => 'The subtle way mucus disarms microbes',
-                    'date'=> "2019-08-15",
+                    'date'=>  "2019-10-16",
                     'likes'=>  '4',
                     'content'=> '
                                 Mucus, which lines 200 square meter of our bodies including lungs and digestive tract
@@ -50,7 +50,7 @@ $articleSience = [
                 ],
                 [     'id' => 'Sience',
                     'title'=> 'Guess what… Even prehistoric humans stored food',
-                    'date'=> "2019-10-16",
+                    'date'=> "2019-08-15" ,
                     'likes'=>  '3',
                     'content'=> 'While they didn’t have refrigerators, prehistoric humans also went through the pains of storing
                                  food for later consumption. This can be understood from the evidence of storage and delayed consumption
@@ -102,17 +102,8 @@ $articleSience = [
     ],
  ];
 
-for ($p=0; $p < 5; $p++) { 
-    # code...
-      sort($articleSience);
-   
-        print_r ($articleSience[$p]['date']);echo " 1 <br>";
-}
 
-/*
-2019-08-15 1
-2019-09-10 1
-2019-09-17 1
-2019-10-16 1
-2019-10-11 1
-*/
+
+
+
+

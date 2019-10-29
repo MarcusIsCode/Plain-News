@@ -12,16 +12,23 @@ function authorFullName(array $names,int $index):string
         return $fullname;
 }
 
+function sortMetod(array $a, array $b)
+{
+    $aDate = strtotime($a['date']);
+    $bDate = strtotime($b['date']);
+    return $aDate - $bDate;
+}
 function addContent(array $content ,array $names, int $int):string
-
     {
-    $fullname ="<h4>" . $names[$int]['fname'] . " " . $names[$int]['lname']. "</h4>";  
+       
+      $fullname ="<h4>" . $names[$int]['fname'] . " " . $names[$int]['lname']. "</h4>";  
      
-     $title ="<h3>". $content[$int]['title'] ."</h3><br>";
-     
+      $title ="<h3>". $content[$int]['title'] ."</h3><br>";
+      $date = "<h6>" . $content[$int]['date'] . "</h3><br>";
       $text = "<p>". $content[$int]['content'] ."</p><br>";
       $likes = "<p>" .$content[$int]['likes']. " Peopele likes this ". "</p>";
-      return $title.$fullname . $text .$likes;
+      
+      return $title . $date . $fullname . $text . $likes;
 }
 
 
