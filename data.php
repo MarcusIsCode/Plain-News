@@ -28,13 +28,18 @@ $authors = [
         ]
     ];
 /*
-all news arrays
+all arrays, they pretty much built the same. 
+the only diffrenfce is 'id' where it's named
+diffrently depending on what array it is
+example: articlSience have id = 'sience.
+
 -$articleSience
 -$articleCulture 
 -$articleSport 
--$articleTech 
+-$articleTech
+-$articleDevelopers 
 */
-
+ 
 
 // Here will there be arrays for diffrent id and content
 

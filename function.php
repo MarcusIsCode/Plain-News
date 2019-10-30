@@ -11,17 +11,21 @@ function authorFullName(array $names,int $index):string
         
         return $fullname;
 }
-
-function sortMetod(array $a, array $b)
-{
+ // used in usort() for sorting one array
+function sortMetod(array $a, array $b):int
+{    //to get date to int in seconds to easily compare
     $aDate = strtotime($a['date']);
     $bDate = strtotime($b['date']);
-    return $aDate - $bDate;
+
+    //the function used in usort()
+    if ($aDate == $bDate) return 0;
+    return ($aDate > $bDate) ? -1 : 1; 
+
 }
-function addContent(array $content ,array $names, int $int):string
+function addContent(array $content ,array $names, int $int, int $authorint):string
     {
        
-      $fullname ="<h4>" . $names[$int]['fname'] . " " . $names[$int]['lname']. "</h4>";  
+      $fullname ="<h4>" . $names[$authorint]['fname'] . " " . $names[$authorint]['lname']. "</h4>";  
      
       $title ="<h3>". $content[$int]['title'] ."</h3><br>";
       $date = "<h6>" . $content[$int]['date'] . "</h3><br>";
@@ -47,27 +51,7 @@ function addingstyle(int $num):string{
        
         }
     }
-/*
-it's a function for taking the string dates from array
-and then turn them to normal dates.
-and then sort from smalles date to bigges
-*/
 
-function sortByDate(array $dates, int $int):string
-{
-    $dateArray = []; // a empty array for the new dates to be orderd
-    foreach($dates as $date){ 
-        
-        //string to date
-        
-         $dateArray [] = $date["date"];
-        
-         //sort smal to big 
-         rsort($dateArray) ;
-        
-    }
-    return $dateArray[$int];
-  
-}
+
 
 
