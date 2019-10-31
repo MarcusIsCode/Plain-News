@@ -5,38 +5,101 @@
 }
 
 body{ 
-  
-    align-items: center;
-    background: whitesmoke;
-   
-
-}
-
-.article{
-    background: white;
-    width: 300px;
-    height:auto;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.articleSience{
-    width:100%;
-    height:100vh;
-    background: chartreuse;
-    overflow-x:hidden ;
+   font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    background: whitesmoke;
+    overflow-x: scroll;
+    background:black;
+    
 }
-.Sience{
-    padding:5px;
+h1{
+    font-family: 'Montserrat', sans-serif; ;
+    font-weight: bold;
+    color:white;
 }
-.Sience p{
-    font-size:18px;
-    text-align: left;
+
+h2{
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+/*
+fonts
+font-family: 'Montserrat', sans-serif; -> header
+font-family: 'Roboto', sans-serif; -> text
+
+*/
+  
+
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
+    
+body{
+    
+    height: 625px;
+}
+.article-box{
+    width:100%;
+    min-width:370px;
+    margin: auto 10px;
+    min-height:708px;
+    border:1px solid black;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    
+}
+nav{
+
+        margin-bottom: 5px;;
+        padding: 10px 10px;
+        min-height: 70px;
+        width:100%;
+        background:#008080;
+        text-align: center;
+    }
+  
+.article{
+    background: white;
+    height:100%;
+    width: 95%;
+    height:auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 22px;;
+    margin-top: 4px;
+    
+}
+h2{
+    font-size: 18px;
+
+}
+.article p:nth-child(3){
+ font-size: 20px;
+ font-weight: bold;
+ color:grey;
+ width:100%;
+ border-bottom: 1px solid black;
+}
+.article p:nth-child(7){
+ font-size: 10px;
+ color:grey;
+ width:100%;
+ border-bottom: 1px solid black;
+}
+.sience{
+    padding:5px;
+}
+
+.sience p{
+    font-size:17px;
+    text-align: left;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

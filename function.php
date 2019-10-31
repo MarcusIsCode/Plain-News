@@ -25,29 +25,29 @@ function sortMetod(array $a, array $b):int
 function addContent(array $content ,array $names, int $int, int $authorint):string
     {
        
-      $fullname ="<h4>" . $names[$authorint]['fname'] . " " . $names[$authorint]['lname']. "</h4>";  
-     
-      $title ="<h3>". $content[$int]['title'] ."</h3><br>";
-      $date = "<h6>" . $content[$int]['date'] . "</h3><br>";
+        
+      $title ="<h2>". $content[$int]['title'] ."</h2><br>";
+      $fullname ="<p>" . $names[$authorint]['fname'] . " " . $names[$authorint]['lname']. "</p><br>";  
+      $date = "<p>" ."Published: ". $content[$int]['date'] . "</p><br>";
       $text = "<p>". $content[$int]['content'] ."</p><br>";
       $likes = "<p>" .$content[$int]['likes']. " Peopele likes this ". "</p>";
       
-      return $title . $date . $fullname . $text . $likes;
+      return $title  . $fullname . $text . $date . $likes;
 }
 
 
 function addingstyle(int $num):string{
         switch ($num){
         case 0;
-        return 'Sience';
+        return 'sience';
         case 1;
-        return 'Art';
+        return 'art';
         case 2;
-        return 'Sport';
+        return 'sport';
         case 3;
-        return 'Tech';
+        return 'tech';
         case 4;
-        return 'Devlopers';
+        return 'devlopers';
        
         }
     }

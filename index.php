@@ -11,11 +11,12 @@ require __DIR__ . "/data.php"
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
     <title></title>
 </head>
 
 <body>
-   
+
 
 
     <?php
@@ -40,51 +41,73 @@ require __DIR__ . "/data.php"
         <?php if ($i === 0) : ?>
 
             <!--$articleSience -->
-            <div class="articleSience">
-                <h1> Latest sience news</h1>
+            <div class="article-box">
+                <nav>
+                    <h1> Latest sience news</h1>
+                </nav>
                 <?php for ($y = 0; $y < count($articleSience); $y++) : ?>
 
                     <div class="article <?php echo addingstyle($i)  ?>">
 
                         <?php echo addContent($articleSience, $authors, $y, 0); ?>
-
                     </div>
                 <?php endfor ?>
             </div>
             <!--$articleCulture -->
-        <?php elseif ($i === 1) : ?>
-            <?php for ($y = 0; $y < count($articleCulture); $y++) : ?>
-                <div class="article <?php echo addingstyle($i)  ?>">
-                    <?php echo addContent($articleCulture, $authors, $y, 1); ?>
-                </div>
-            <?php endfor ?>
 
+            <div class="article-box">
+                <nav>
+                    <h1> Latest culture news </h1>
+                </nav>
+
+                <?php for ($y = 0; $y < count($articleCulture); $y++) : ?>
+                    <div class="article <?php echo addingstyle($i)  ?>">
+                        <?php echo addContent($articleCulture, $authors, $y, 1); ?>
+                    </div>
+                <?php endfor ?>
+            </div>
             <!--$articleSport -->
-        <?php elseif ($i === 2) : ?>
-            <?php for ($y = 0; $y < count($articleSport); $y++) : ?>
+            <div class="article-box">
+                <nav>
+                    <h1> Latest Sport news </h1>
+                </nav>
+            <?php elseif ($i === 2) : ?>
+                <?php for ($y = 0; $y < count($articleSport); $y++) : ?>
 
-                <div class="article <?php echo addingstyle($i)  ?>">
-                    <?php echo addContent($articleSport, $authors, $y, 2); ?>
-                </div>
-            <?php endfor ?>
+                    <div class="article <?php echo addingstyle($i)  ?>">
+                        <?php echo addContent($articleSport, $authors, $y, 2); ?>
+                    </div>
+
+                <?php endfor ?>
+            </div>
 
             <!--$articleTech -->
-        <?php elseif ($i === 3) : ?>
-            <?php for ($y = 0; $y < count($articleTech); $y++) : ?>
-                <div class="article <?php echo addingstyle($i)  ?>">
-                    <?php echo addContent($articleTech, $authors, $y, 3); ?>
-                </div>
-            <?php endfor ?>
+            <div class="article-box">
+                <nav>
+                    <h1> Latest Tech news </h1>
+                </nav>
 
+            <?php elseif ($i === 3) : ?>
+                <?php for ($y = 0; $y < count($articleTech); $y++) : ?>
+                    <div class="article <?php echo addingstyle($i)  ?>">
+                        <?php echo addContent($articleTech, $authors, $y, 3); ?>
+                    </div>
+                <?php endfor ?>
+            </div>
 
             <!--$articleDevelopers  -->
-        <?php elseif ($i === 4) : ?>
-            <?php for ($y = 0; $y < count($articleDevelopers); $y++) : ?>
-                <div class="article <?php echo addingstyle($i)  ?>">
-                    <?php echo addContent($articleDevelopers, $authors, $y, 4); ?>
-                </div>
-            <?php endfor ?>
 
+            <div class="article-box">
+                <nav>
+                    <h1> Latest Article news </h1>
+                </nav>
+            <?php elseif ($i === 4) : ?>
+                <?php for ($y = 0; $y < count($articleDevelopers); $y++) : ?>
+                    <div class="article <?php echo addingstyle($i)  ?>">
+                        <?php echo addContent($articleDevelopers, $authors, $y, 4); ?>
+                    </div>
+                <?php endfor ?>
+            </div>
         <?php endif; ?>
 
 
