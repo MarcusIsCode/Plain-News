@@ -14,8 +14,7 @@ first instal php on your computer then run [php -S localhost:1337] in terminal.
 * [Mark Dela Cruz](https://github.com/deinnielle)
 * [Bernhard Stedt](https://github.com/Vehx)
 
-## code review 
-* [Karl-Johan Lundholm](https://github.com/kallelundh)
+## code review by  [Karl-Johan Lundholm](https://github.com/kallelundh)
 
 - index.php: Try to keep the class names consistent. On line 43 you have camel case and on line 57 you have kebab case.
 - style.css: Try to keep the whitespace consistent. From line 125 and down there is a lot of whitespace.
