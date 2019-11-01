@@ -21,3 +21,6 @@ first instal php on your computer then run [php -S localhost:1337] in terminal.
 - data.php: Try to keep the grammatics correct in the comments. On line 31 and down there is a lot of misspellings. E.g: “sience”. (Also maybe change that in your arrays)
 - index.php: Delete the extra opening and closing php tags on line 120-121.
 - In the start of the page when responsive. At the top of the page there is a small margin with black space. Could be confused with being the entrance to hell?
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
