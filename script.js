@@ -13,6 +13,9 @@ let techContent = document.querySelectorAll('.tech');
 const DevelopersBtn = document.getElementById('de')
 let  devContent = document.querySelectorAll('.devlopers');
 
+const topic = document.getElementById('topic');
+
+
 const displayNone = (a,b,c,d) =>{
 
     for(let x of a) {
@@ -35,22 +38,27 @@ const displayNone = (a,b,c,d) =>{
 
 sienceBtn.onclick = function(){
     displayNone(cultureContent, sportContent, techContent, devContent);
-    for (let sienceCon of sienceContent) {
-        sienceCon.style.display = "block";
+        for (let sienceCon of sienceContent) {
+            sienceCon.style.display = "block";
+            
     }
+    topic.innerHTML = "sience "
 }
 cultureBtn.onclick = function () {
     displayNone(sienceContent, sportContent, techContent, devContent);
     for (let cultureCon of cultureContent) {
         cultureCon.style.display = "block";
     }
+    topic.innerHTML = "culture "
 
 }
 sportBtn.onclick = function () {
     displayNone(sienceContent, cultureContent, techContent, devContent);
     for (let sportCon of sportContent) {
         sportCon.style.display = "block";
+        
     }
+    topic.innerHTML = "sports "
 
 
 }
@@ -59,10 +67,13 @@ techBtn.onclick = function () {
     for (let techCon of techContent) {
         techCon.style.display = "block";
     }
+    topic.innerHTML = "Tech "
 }
 DevelopersBtn.onclick = function () {
     displayNone(sienceContent, sportContent, techContent, cultureContent);
     for (let devCont of devContent) {
         devCont.style.display = "block";
+        
     }
+    topic.innerHTML = "Developers "
 }

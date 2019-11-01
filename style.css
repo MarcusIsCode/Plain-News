@@ -139,17 +139,15 @@ main{
   
 }
 h1{
-    font-size: 22px;;
-    margin-top: 4px;
+    font-size: 28px;;
+    
     
 }
-h2{
-    font-size: 18px;
-    
-}
+
 .navBtns{
      left: 50%;
     transform:scale(1.35) translateX(-38%);
+    top:45px;
 }
 
 }

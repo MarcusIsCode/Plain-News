@@ -39,7 +39,7 @@ require __DIR__ . "/data.php"
     <main>
         <nav>
             <!--the id's is for script -->
-            <h1> Latest <span id="Topic"> sience </span>news</h1>
+            <h1> Latest <span id="topic"> sience </span>news</h1>
             <div class="navBtns">
                 <a id="si">Sience</a>
                 <a id="cu">Culture</a>
