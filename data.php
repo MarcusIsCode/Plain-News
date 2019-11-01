@@ -7,7 +7,7 @@ $authors = [
         'lname' =>  'Stevensson'
         ],
         [
-        'id'    =>  'culturre',   
+        'id'    =>  'culture',   
         'fname' =>  'Lars',
         'lname' =>  'Larsson'
         ],
