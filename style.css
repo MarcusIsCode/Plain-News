@@ -8,77 +8,79 @@ body{
    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
-    background: whitesmoke;
-    overflow-x: scroll;
     background:black;
+    height: 100vh;
     
 }
 h1{
     font-family: 'Montserrat', sans-serif; ;
-    font-weight: bold;
+    font-weight: bolder;
     color:white;
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
 }
-
-
-/*
-fonts
-font-family: 'Montserrat', sans-serif; -> header
-font-family: 'Roboto', sans-serif; -> text
-
-*/
+main{
+     width:100%;
+    min-width:499px;
+    height:auto;
+    overflow-y:auto;
   
-
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-    
-body{
-    
-    height: 625px;
 }
-.article-box{
-    width:100%;
-    min-width:370px;
-    margin: auto 10px;
-    min-height:708px;
-    border:1px solid black;
-    background: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    
-}
-nav{
-
+nav{        
         margin-bottom: 5px;;
-        padding: 10px 10px;
-        min-height: 70px;
+        min-height: 120px;
         width:100%;
         background:#008080;
         text-align: center;
     }
-  
+a{
+    color:white;
+}
+
+nav a{
+    font-size: 12px;
+    border:1px solid white;
+    border-radius:4px;
+    margin-left:7px;
+    padding: 0px 6px;
+    width:auto;
+    height: 20px;
+    padding-top:5px;
+    float:left;
+}
+.navBtns{
+    position: relative;
+    top:55px;
+    width:350px;
+    height:30px;
+    padding-top:5px;
+    background: rgba(255,255,255,0.3);
+    border-radius:0px 8px 8px 0px;;
+}
+
+nav a:hover{
+    background-color:rgba(255,0,92,0.3);
+    cursor:pointer;
+}
+nav a:active{
+    border-width:1.5px 1px;
+}
+.article-box{
+    height: auto;
+    width: 100%;
+    
+   
+}
 .article{
     background: white;
-    height:100%;
-    width: 95%;
+    height:333px;
+    width: 90%;
     height:auto;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h1{
-    font-size: 22px;;
-    margin-top: 4px;
+    text-align: left;
     
-}
-h2{
-    font-size: 18px;
-
+   
 }
 .article p:nth-child(3){
  font-size: 20px;
@@ -93,30 +95,81 @@ h2{
  width:100%;
  border-bottom: 1px solid black;
 }
+
 .sience{
-    padding:5px;
+    margin:15px auto 15px auto;  
+    
+}
+.culture{
+    margin:0 auto 15px auto; 
+    display:none ;
+}
+.sport{
+    margin:0 auto 15px auto;
+    display:none  
+}
+.tech{
+    margin:0 auto 15px auto;
+    display: none;  
+}
+.devlopers{
+    margin:0 auto 15px auto;
+    display: none;  
+}
+/*
+fonts
+font-family: 'Montserrat', sans-serif; -> header
+font-family: 'Roboto', sans-serif; -> text
+
+*/
+  
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+  
+main{
+     width:100%;
+    min-width:499px;
+  
+}
+    
+
+
+
+
+h1{
+    font-size: 22px;;
+    margin-top: 4px;
+    
+}
+h2{
+    font-size: 18px;
+
 }
 
-.sience p{
-    font-size:17px;
-    text-align: left;
-}
 
+
+
+
+
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-}
+   
+   } 

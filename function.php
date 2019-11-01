@@ -41,7 +41,7 @@ function addingstyle(int $num):string{
         case 0;
         return 'sience';
         case 1;
-        return 'art';
+        return 'culture';
         case 2;
         return 'sport';
         case 3;
